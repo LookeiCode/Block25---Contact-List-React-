@@ -5,7 +5,14 @@ import App from '../App'
 
 export default function SelectedContact() { 
 
-const selectedContact = contact.find((contact) => contact.id === selectedContactId)
+const SelectedContact = ({ selectedContact }) => {
+  return (
+    <>
+      <h1>{selectedContact.name}</h1>
+      <h2>whatever else about this contact</h2>
+    </>
+  );
+};
 
   // console.log("Featured Contact: ", selectedContact)
   // console.log("Contact List: ", ContactList)
