@@ -1,5 +1,6 @@
 import React from "react";
 import { useState } from 'react'
+import SelectedContact from "./SelectedContact";
 
 export default function ContactRow({setSelectedContactId, contact}) {
     return (
