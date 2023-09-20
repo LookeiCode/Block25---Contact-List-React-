@@ -1,15 +1,13 @@
 import React from "react";
 import { useState } from 'react'
 import ContactList from "./ContactList";
-
-import '../App.css'
+import App from '../App'
 
 export default function SelectedContact() { 
 
-const [SelectedContactId, setSelectedContactId] = useState(null)
-const selectedContactId = contact.find((contact) => contact.id === SelectedContactId)
+const selectedContact = contact.find((contact) => contact.id === selectedContactId)
 
-  console.log("Featured Contact: ", selectedContactId)
-  console.log("Contact List: ", ContactList)
+  // console.log("Featured Contact: ", selectedContact)
+  // console.log("Contact List: ", ContactList)
 
 }

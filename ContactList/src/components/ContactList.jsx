@@ -17,7 +17,7 @@ export default function ContactList({setSelectedContactId}) {
       async function fetchContacts() {
         try {
           const response = await fetch(
-            "https://jsonplace-univclone.herokuapp.com/users"
+            "https://jsonplaceholder.typicode.com/users"
           );
           const result = await response.json();
           setContacts(result);
@@ -44,7 +44,7 @@ export default function ContactList({setSelectedContactId}) {
               <td>Phone</td>
             </tr>
                {contacts.map((contact) => {
-                return <ContactRow key={contact.id} contact={contact} />;
+                return <ContactRow key={contact.id} setSelectedContactId={setSelectedContactId} contact={contact} />;
               })}
           </tbody>
         </table>
