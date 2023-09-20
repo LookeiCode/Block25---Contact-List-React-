@@ -2,6 +2,7 @@ import React from "react";
 import { useState } from 'react'
 import {useEffect} from 'react'
 import ContactRow from './ContactRow.jsx'
+import SelectedContact from './SelectedContact.jsx'
 
 const dummyContacts = [
     { id: 1, name: "R2-D2", phone: "222-222-2222", email: "r2d2@droids.com" },
@@ -9,7 +10,7 @@ const dummyContacts = [
     { id: 3, name: "BB-8", phone: "888-888-8888", email: "bb8@droids.com" },
   ];
 
-export default function ContactList() { 
+export default function ContactList({setSelectedContactId}) { 
 
     const [contacts, setContacts] = useState(dummyContacts)
     useEffect(()=>{
@@ -27,7 +28,7 @@ export default function ContactList() {
       fetchContacts()
     },[])
 
-    console.log("Contacts: ", contacts)
+    // console.log("Contacts: ", contacts)
 
   return ( 
         <table>
