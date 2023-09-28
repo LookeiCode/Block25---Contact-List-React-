@@ -1,8 +1,7 @@
 import { useState } from 'react'
 import './App.css'
-import ContactList from './components/ContactList.jsx'
+import ContactList from './components/ContactList'
 import SelectedContact from './components/SelectedContact'
-import ContactRow from './components/ContactRow'
 
 
 export default function App() {
@@ -22,3 +21,17 @@ export default function App() {
     </>
   )
 }
+
+/*
+
+const sup = "sup man"
+
+// const yo = (sup) => {
+//   const num1 = 1
+//   const num2 = 2
+//   const answer = num1 + num2
+//   return answer
+// }
+// console.log(<yo />);
+
+*/

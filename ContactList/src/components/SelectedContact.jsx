@@ -1,11 +1,7 @@
 import React from "react";
-import { useState } from 'react'
-import ContactList from "./ContactList";
-import App from '../App'
 
-export default function SelectedContact() { 
+const SelectedContact = ({selectedContact}) => { 
 
-const SelectedContact = ({ selectedContact }) => {
   return (
     <>
       <h1>{selectedContact.name}</h1>
@@ -13,8 +9,7 @@ const SelectedContact = ({ selectedContact }) => {
     </>
   );
 };
-
   // console.log("Featured Contact: ", selectedContact)
   // console.log("Contact List: ", ContactList)
 
-}
+  export default SelectedContact;
